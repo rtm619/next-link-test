@@ -1,0 +1,62 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "globals": {
+    "graphql": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
+      "experimentalDecorators": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-filename-extension": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/no-danger": "off",
+    "import/no-dynamic-require": "off",
+    "global-require": "off",
+    "linebreak-style": 0,
+    "react/prop-types": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/forbid-prop-types": 0,
+    "no-script-url": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/no-array-index-key": 0,
+    "no-nested-ternary": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/label-has-for": 0,
+    "prefer-destructuring": 0,
+    "prefer-template": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "consistent-return": 0,
+    "array-callback-return": 0,
+    "react/jsx-wrap-multilines": 0,
+    "react/sort-comp": 0,
+    "prefer-const": 0,
+    "no-plusplus": 0,
+    "no-else-return": 0,
+    "no-lonely-if": 0,
+    "no-param-reassign": 0
+  },
+  "overrides": [
+    {
+      "files": ["*.spec.js", "*.test.js"],
+      "rules": {
+        "no-unused-expressions": "off",
+        "no-undef": "off"
+      }
+    }
+  ]
+}
